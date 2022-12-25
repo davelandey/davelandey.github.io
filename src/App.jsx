@@ -14,10 +14,12 @@ import './App.css'
 
 const App = (props) => {
 
+  // TODO: function for light/dark mode toggle
+
     const [coordinates, setCoordinates] = useState({});
 
+    //User location collected at start
     const getUserLocation = () => {
-      //Javascript method that gets permission from client to use location
       navigator.geolocation.getCurrentPosition((position) => {
         setCoordinates({
           lat: position.coords.latitude,
