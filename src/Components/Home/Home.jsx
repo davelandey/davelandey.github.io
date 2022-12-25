@@ -1,7 +1,9 @@
 import { Container, Col, Row, Nav } from "reactstrap";
 import AboutMe from "../AboutMe/AboutMe";
 import Profile from "../Profile/Profile";
+
 const Home = (props) => {
+  
   console.log(props.coordinates);
 
   return (
