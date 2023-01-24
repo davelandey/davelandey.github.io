@@ -1,19 +1,26 @@
-import { Container, Col, Row, Nav } from "reactstrap";
+import { useState } from "react";
+import { Button, Container, Col, Row, Nav } from "reactstrap";
 import AboutMe from "../AboutMe/AboutMe";
+import Experience from "../Experience/Experience";
+import Hobbies from "../Hobbies/Hobbies";
 import Profile from "../Profile/Profile";
+import Projects from "../Projects/Projects";
+import './Home.css'
 
 const Home = (props) => {
-  
-  console.log(props.coordinates);
 
   return (
-    <Container>
+    <Container id="homeContainer" fluid>
       <Row>
-        <Col>
+        <Col id="homeColumnOne" xl="5" lg="5" sm="6">
+        {/* <Col id="homeColumnOne"> */}
           <Profile />
         </Col>
-        <Col>
+        {/* <Col id="homeColumnTwo"> */}
+        <Col id="homeColumnTwo" xl="7" lg="7" sm="6">
           <AboutMe />
+          <Projects />
+          <Experience />
         </Col>
       </Row>
     </Container>

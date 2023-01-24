@@ -3,7 +3,7 @@ const Hobbies = (props) => {
     return ( 
     
     <>
-    
+    Hello from hobbies
     </> 
     
     );

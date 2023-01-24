@@ -1,0 +1,21 @@
+#ProfilePicRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: blueviolet;
+}
+
+#ProfilePic {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
+
+#profileIntro {
+  display: flex;
+  text-align: left;
+  justify-content: flex-end;
+  background-color: aqua;
+  height: 45vh;
+}
