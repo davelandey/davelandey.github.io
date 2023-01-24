@@ -1,0 +1,11 @@
+/* #container { */
+/* display: flex; */
+/* justify-content: space-around; */
+/* align-items: flex-start; */
+/* width: relative; */
+/* width: 100%; */
+/* } */
+#mapContainer {
+  height: 400px;
+  width: 750px;
+}

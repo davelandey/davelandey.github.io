@@ -1,11 +1,15 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavLink} from 'react-router-dom';
+import {Button} from 'reactstrap'
+import Lightbulb from '../../Images/Icons/Lightbulb.png'
 
 
 const Navbar = (props) => {
-
+  const lightModeToggle = props.lightModeToggle
+  
   // IDEA: Personal, 
+
 
     let activeStyle = {color: "RGB(0, 0, 0)", fontWeight:"400"};
     let inActiveStyle = {color: "RGB(0, 0, 0)", fontSize: "1em", fontWeight:"300"};
@@ -43,6 +47,9 @@ const Navbar = (props) => {
           to='/experience'
           style={({ isActive }) => isActive ? activeStyle : inActiveStyle}>
             Experience</NavLink>
+          </li>
+          <li>
+            <Button color="success" type="reset" id="lightModeButton" onClick={lightModeToggle}><img src={Lightbulb} height="20px" alt="lightbulb"/> </Button>
           </li>
         </ul>
       </nav>

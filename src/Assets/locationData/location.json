@@ -1,0 +1,86 @@
+[
+  {
+    "id": "location_1",
+    "years": "1986 - 1999",
+    "city": "Johannesburg",
+    "province_state": "Gauteng",
+    "country": "South Africa",
+    "coordinates": {
+      "latitude": -26.20477725062086,
+      "longitude": 28.040022285549494
+    },
+    "link": "https://www.google.co.za/maps/place/Johannesburg,+South+Africa/@-26.1713505,27.9699844,12z/data=!3m1!4b1!4m5!3m4!1s0x1e950c68f0406a51:0x238ac9d9b1d34041!8m2!3d-26.2041028!4d28.0473051"
+  },
+  {
+    "id": "location_2",
+    "years": "2000 - 2004",
+    "city": "East London",
+    "province_state": "Eastern Cape",
+    "country": "South Africa",
+    "coordinates": {
+      "latitude": -33.01660848995725,
+      "longitude": 27.904868389755155
+    },
+    "link": "https://www.google.co.za/maps/place/East+London,+South+Africa/@-32.9552686,27.6405099,11z/data=!3m1!4b1!4m5!3m4!1s0x1e66e6fc26098303:0x62b7d874cc1a1b9f!8m2!3d-33.0198434!4d27.903905"
+  },
+  {
+    "id": "location_3",
+    "years": "2005 - 2009",
+    "city": "Grahamstown",
+    "province_state": "Eastern Cape",
+    "country": "South Africa",
+    "coordinates": {
+      "latitude": -33.311981214127776,
+      "longitude": 26.51631706456372
+    },
+    "link": "https://www.google.co.za/maps/place/Rhodes+University/@-33.3158948,26.5202608,13.8z/data=!4m13!1m7!3m6!1s0x1e64421c50a2e493:0xfa97fd84e8c75ae4!2sMakhanda,+South+Africa!3b1!8m2!3d-33.3106292!4d26.5255946!3m4!1s0x1e645dd0c6d4fc47:0x9982445ffb8737af!8m2!3d-33.3135911!4d26.5163135"
+  },
+  {
+    "id": "location_4",
+    "years": "2010 - 2013",
+    "city": "Cape Town",
+    "province_state": "Western Cape",
+    "country": "South Africa",
+    "coordinates": {
+      "latitude": -33.96385148836286,
+      "longitude": 18.474416190284686
+    },
+    "link": "https://www.google.co.za/maps/place/Cape+Town,+South+Africa/@-33.9131289,18.0956246,9z/data=!3m1!4b1!4m5!3m4!1s0x1dcc500f8826eed7:0x687fe1fc2828aa87!8m2!3d-33.9248685!4d18.4240553"
+  },
+  {
+    "id": "location_5",
+    "years": "2014 - 2016",
+    "city": "Mala Mala Private Game Reserve",
+    "province_state": "Mpumalanga",
+    "country": "South Africa",
+    "coordinates": {
+      "latitude": -24.80031794786734,
+      "longitude": 31.54068685164431
+    },
+    "link": "https://www.google.co.za/maps/place/Mala+Mala+Game+Reserve/@-24.8003715,31.5386269,17z/data=!3m1!4b1!4m5!3m4!1s0x1ec2ade8b2e22fdb:0xeaade21ba4537d94!8m2!3d-24.8003764!4d31.5408156"
+  },
+  {
+    "id": "location_6",
+    "years": "2017 - 2018",
+    "city": "Tlakgameng",
+    "province_state": "North West",
+    "country": "South Africa",
+    "coordinates": {
+      "latitude": -26.46877136582519,
+      "longitude": 24.339412469094455
+    },
+    "link": "https://www.google.co.za/maps/place/Tlakgameng,+8616,+South+Africa/@-26.4895663,24.3061029,13z/data=!3m1!4b1!4m5!3m4!1s0x1ea207fea5db4771:0x8e0f8c03dc039858!8m2!3d-26.4689279!4d24.3400858"
+  },
+  {
+    "id": "location_7",
+    "years": "2018 - Present",
+    "city": "Greater Burlington Area",
+    "province_state": "Vermont",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 44.47580405549384,
+      "longitude": -73.21149707732648
+    },
+    "link": "https://www.google.co.za/maps/place/Burlington,+VT/@44.4730955,-73.2143563,13.8z/data=!4m13!1m7!3m6!1s0x4cca7a55b69b55e5:0xc35fe519720e498e!2sBurlington,+VT!3b1!8m2!3d44.4758825!4d-73.212072!3m4!1s0x4cca7a55b69b55e5:0xc35fe519720e498e!8m2!3d44.4758825!4d-73.212072"
+  }
+]

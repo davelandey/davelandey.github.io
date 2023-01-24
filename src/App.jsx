@@ -10,35 +10,30 @@ import Projects from "./Components/Projects/Projects";
 import Experience from "./Components/Experience/Experience";
 import Email from "./Components/Email/Email";
 import './App.css'
+import './index.css'
 
 
 const App = (props) => {
 
-  // TODO: function for light/dark mode toggle
+function lightModeToggle(){
+  const lightMode = document.body;
+  lightMode.classList.toggle("dark-mode")
+  // if (lightMode.classList === 'dark-mode'){
+    // How do I target lightMode Button text and change it depending on selection
+    // lightModeButton.innerText('light mode')
+  // } else {
+    // console.log("light mode")
+  }
+// }
 
-    const [coordinates, setCoordinates] = useState({});
 
-    //User location collected at start
-    const getUserLocation = () => {
-      navigator.geolocation.getCurrentPosition((position) => {
-        setCoordinates({
-          lat: position.coords.latitude,
-          lon: position.coords.longitude,
-        });
-      });
-    };
-  
-    useEffect(() => {
-      getUserLocation();
-    }, []);
     
     return (
     <>
    
-    {/* <PhotoBanner/> */}
-    <Navbar />
+    <Navbar lightModeToggle={lightModeToggle}/>
     <Routes>
-        <Route path='/' element={<Home coordinates={coordinates}/>} /> 
+        <Route path='/' element={<Home  />} /> 
         <Route path='/about-me' element={<AboutMe />} /> 
         <Route path='/hobbies-and-interests' element={<Hobbies />} />
         <Route path='/projects' element={<Projects />} />

@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { React, useState } from "react";
 import "../../App.css";
-// import Email from "../pages/Email/Email";
+import Email from "../Email/Email";
 import {
   Button,
   Form,
@@ -31,8 +31,7 @@ const Footer = (props) => {
             <Modal isOpen={modal} toggle={toggle}>
               <ModalHeader toggle={toggle}>Contact me</ModalHeader>
               <ModalBody>
-                {/* <Email /> */}
-                Email component
+                <Email />
               </ModalBody>
               <ModalFooter>
                 <Button color="primary" onClick={toggle}>
