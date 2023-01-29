@@ -4,7 +4,7 @@ import "./Profile.css";
 
 const Profile = (props) => {
   return (
-    <Container id='ProfilePicContainer'>
+    <Container id='ProfilePicContainer' fluid>
       <Row id='ProfilePicRow'>
         <img id='ProfilePic' src={ProfilePic} alt='Dave Landey' />
       </Row>
