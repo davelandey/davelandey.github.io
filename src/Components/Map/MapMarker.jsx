@@ -2,27 +2,7 @@ import { Marker, Popup } from "react-leaflet";
 import { Button, Container } from "reactstrap";
 
 const MapMarker = (props) => {
-  //   const [livedLocations, setLivedLocations] = useState({});
 
-  //   async function livedLocationData() {
-  //     const myLocationsJSON = fetch(myLocations);
-  //     let info = JSON.parse(myLocationsJSON);
-  //     console.log(info);
-  //     try {
-  //       const response = await fetch(locations);
-  //       let data = await JSON.parse(response);
-  //       setLivedLocations(data);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   }
-  //   console.log("CHECK THIS OUT" + livedLocations)
-
-  //   useEffect(() => {
-  //     livedLocationData();
-  //   }, []);
-
-  const id = props.id;
   const location = props.location;
 
   return (

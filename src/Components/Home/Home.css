@@ -13,11 +13,10 @@
 }
 
 #homeColumnOne {
-  /* align-items: flex-start; */
-  /* max-width: 100%; */
+  display: flex;
+  justify-content: center;
   height: 100%;
   background-color: yellow;
-  /* position: relative; */
   overflow: hidden;
   margin: none;
   padding: none;
@@ -25,24 +24,19 @@
 }
 
 #homeColumnTwo {
-  /* flex: 5; */
   display: flex;
   flex-flow: row wrap;
-  /* justify-content: flex-end; */
-  /* position: relative; */
-  /* min-width: auto; */
+  justify-content: center;
   height: 100%;
   background-color: green;
-  /* z-index: 1; */
   overflow-y: scroll !important;
-  /* overflow-y: auto !important; */
   scrollbar-color: var(--Text);
   scroll-behavior: smooth;
   margin: none;
-  padding: none;
+  padding: 2em;
   gap: none;
 }
 
-#mapRestButton {
-  width: 100%;
+#experienceRow {
+  margin-bottom: 2.5em;
 }

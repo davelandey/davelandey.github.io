@@ -1,11 +1,22 @@
 #container {
-  align-self: flex-end;
-  flex-direction: row;
+  margin-top: 2em;
   display: flex;
+  flex-flow: row;
+  align-self: flex-end;
+  overflow: hidden;
+}
+#mapContainer {
+  height: 600px;
+  width: 1000px;
+  border: 1em solid purple;
+  border-radius: 10px;
 }
 
-#mapContainer {
-  /* align-self: flex-end; */
-  height: 600px;
-  width: 1100px;
+#mapRestButton {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 75px;
+  padding: 10px;
+  z-index: 500;
 }
