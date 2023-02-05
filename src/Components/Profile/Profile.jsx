@@ -1,10 +1,10 @@
 import { Col, Row, Container } from "reactstrap";
-import ProfilePic from "../../Images/Dave/profilePic.png";
+import ProfilePic from "../../Assets/Images/Dave/profilePic.png";
 import "./Profile.css";
 
 const Profile = (props) => {
   return (
-    <Container id='ProfilePicContainer'>
+    <Container id='ProfilePicContainer' fluid>
       <Row id='ProfilePicRow'>
         <img id='ProfilePic' src={ProfilePic} alt='Dave Landey' />
       </Row>
