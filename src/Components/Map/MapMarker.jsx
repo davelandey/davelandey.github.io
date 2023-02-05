@@ -1,5 +1,5 @@
 import { Marker, Popup } from "react-leaflet";
-import { Button, Container } from "reactstrap";
+import { Button } from "reactstrap";
 
 const MapMarker = (props) => {
 

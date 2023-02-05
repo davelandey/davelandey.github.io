@@ -18,12 +18,12 @@ const Home = (props) => {
         <Row>
           <Map />
         </Row>
+        <Row id="experienceRow">
+          <Experience />
+        </Row>
         <Row>
           <Hobbies />
           <br />
-        </Row>
-        <Row id="experienceRow">
-          <Experience />
         </Row>
         <Projects />
       </Col>

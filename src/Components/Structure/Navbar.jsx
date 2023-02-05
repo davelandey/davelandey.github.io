@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
 import { Button } from "reactstrap";
-import Lightbulb from "../../Images/Icons/Lightbulb.png";
+import Lightbulb from "../../Assets/icons/Lightbulb.png";
 
 const Navbar = (props) => {
   const lightModeToggle = props.lightModeToggle;

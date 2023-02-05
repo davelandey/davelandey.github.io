@@ -1,5 +1,5 @@
 import { Col, Row, Container } from "reactstrap";
-import ProfilePic from "../../Images/Dave/profilePic.png";
+import ProfilePic from "../../Assets/Images/Dave/profilePic.png";
 import "./Profile.css";
 
 const Profile = (props) => {
