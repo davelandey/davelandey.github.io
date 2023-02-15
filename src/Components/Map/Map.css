@@ -1,11 +1,11 @@
-#container {
+/* #container {
   margin-top: 2em;
   margin-bottom: 2em;
   display: flex;
   flex-flow: row;
   align-self: flex-end;
   overflow: hidden;
-}
+} */
 #mapContainer {
   height: 600px;
   width: 1000px;

@@ -1,13 +1,11 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import "./Map.css";
 import {
   MapContainer,
   TileLayer,
-  useMap,
   Marker,
   Popup,
   ZoomControl,
-  useMapEvents,
 } from "react-leaflet";
 import { Button, Col, Container, Row } from "reactstrap";
 import MapMarker from "./MapMarker";
@@ -18,51 +16,69 @@ const Map = (props) => {
   const zoom = 2;
 
   const [map, setMap] = useState(null);
-  const [mapCenter, setMapCenter] = useState(center);
-  const [mapZoom, setMapZoom] = useState(zoom);
+
   const [coordinates, setCoordinates] = useState({ lat: 0, lon: 0 });
   const [userLocationMessage, setUserLocationMessage] =
     useState("Find your location");
   const [userLocationButtonMessage, setUserLocationButtonMessage] =
     useState("Find your location");
 
-    const getUserLocation = () => {
-      navigator.geolocation.getCurrentPosition((position) => {
-        setCoordinates({
-          lat: position.coords.latitude,
-          lon: position.coords.longitude,
-        });
-        setUserLocationMessage("You are here!");
-        setUserLocationButtonMessage("Found your location");
+  const getUserLocation = () => {
+    navigator.geolocation.getCurrentPosition((position) => {
+      setCoordinates({
+        lat: position.coords.latitude,
+        lon: position.coords.longitude,
       });
-    };
+      setUserLocationMessage("You are here!");
+      setUserLocationButtonMessage("Found your location");
+    });
+  };
 
+  function DisplayPosition({ map }) {
+    const [position, setPosition] = useState(() => map.getCenter());
 
-  //Function will reset: zoom, user marker (location and info within)
-  //**Function is not resetting map zoom on click - why?!
-const MapZoomReset = useCallback(() => {
-setMapCenter(center)
-setMapZoom(zoom)
-setUserLocationMessage("Find your location");
-setUserLocationButtonMessage("Find your location");
-alert("I am working on this functionality.\nWhen a user clicks this button the map will: \n- recenter \n- zoom will return to original")
-}, [])
-  
+    const onClick = useCallback(() => {
+      map.setView(center, zoom);
+      setUserLocationMessage("Find your location");
+      setUserLocationButtonMessage("Find your location");
+    }, [map]);
 
-  return (
-    <Container id='container' fluid='true'>
+    const onMove = useCallback(() => {
+      setPosition(map.getCenter());
+    }, [map]);
+
+    useEffect(() => {
+      map.on("move", onMove);
+      return () => {
+        map.off("move", onMove);
+      };
+    }, [map, onMove]);
+
+    return (
+      <p>
+        latitude: {position.lat.toFixed(4)}, longitude:{" "}
+        {position.lng.toFixed(4)}
+        <button onClick={onClick}>Reset</button>
+      </p>
+    );
+  }
+
+  const displayMap = useMemo(
+    () => (
       <MapContainer
         id='mapContainer'
         center={center}
-        zoom={mapZoom}
+        zoom={zoom}
         scrollWheelZoom={false}
         zoomControl={false}
         doubleClickZoom={false}
         ref={setMap}
       >
-        <Button id='mapRestButton' onClick={MapZoomReset} color='success'>
+
+        {/* Button: reset functionality wanted on this one */}
+        {/* <Button id='mapRestButton' onClick={DisplayPosition} color='success'>
           Reset Map
-        </Button>
+        </Button> */}
         <ZoomControl position='topleft' />
 
         <TileLayer
@@ -88,9 +104,15 @@ alert("I am working on this functionality.\nWhen a user clicks this button the m
         {locations.map((location) => (
           <MapMarker location={location} id={location.id} />
         ))}
-
-        {/* EXAMPLE FROM REACT LEAFTET */}
       </MapContainer>
+    ),
+    []
+  );
+
+  return (
+    <Container id='container' fluid='true'>
+      {displayMap}
+      {map ? <DisplayPosition map={map} /> : null}
     </Container>
   );
 };

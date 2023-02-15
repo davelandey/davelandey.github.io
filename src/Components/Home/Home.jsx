@@ -15,17 +15,13 @@ const Home = (props) => {
         <Profile />
       </Col>
       <Col id='homeColumnTwo' xl='9' lg='7' sm='6'>
-        <Row>
-          <Map />
-        </Row>
         <Row id="experienceRow">
           <Experience />
         </Row>
         <Row>
-          <Hobbies />
-          <br />
+          <AboutMe/>
+          <Map />
         </Row>
-        <Projects />
       </Col>
     </Container>
   );
