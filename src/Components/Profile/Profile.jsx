@@ -6,25 +6,24 @@ const Profile = (props) => {
   return (
     <Container id='ProfilePicContainer' fluid>
       <Row id='ProfilePicRow'>
-        <img id='ProfilePic' src={ProfilePic} alt='Dave Landey' />
+        <img id='ProfilePic' src={ProfilePic} alt='Dave Landey' xl="6"/>
       </Row>
       <Row id="profileIntro">
       <h1>Hi,</h1>
-      <br />
+      {/* <br /> */}
       <h3>I'm Dave Landey.</h3>
-      <br />
-      <h5>I am a software developer.</h5>
-      <br />
-      <h6>
+      {/* <br /> */}
+      <h4>I am a software developer.</h4>
+      {/* <br /> */}
+      <h5>
         <em>Passionate about: 
-          <br />
           <br />
           <ul>
             <li>People</li>
             <li>Creating</li>
             <li>Life long learning</li>
           </ul></em>
-          </h6>
+          </h5>
       </Row>
     </Container>
   );

@@ -7,8 +7,8 @@
   overflow: hidden;
 } */
 #mapContainer {
-  height: 600px;
-  width: 1000px;
+  height: 400px;
+  width: 650px;
   border: 1em solid purple;
   border-radius: 10px;
 }

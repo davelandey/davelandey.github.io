@@ -1,13 +1,38 @@
-#AboutMe {
-  /* width: 100%; */
-  /* display: flex; */
-  align-items: center;
-  margin: none;
-  padding: none;
-  background-color: chartreuse;
+#aboutMeContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
+  background-color: plum;
 }
 
-#aboutMeDiv {
-  /* display: flex; */
-  justify-content: space-around;
+#fontContainer {
+  display: flex;
+  overflow: visible;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background-color: rgb(245, 245, 245, 0.2);
+  border-radius: 10px;
+  height: 40%;
+  width: 30%;
+  min-width: 30%;
+  min-height: 45%;
+}
+
+#fontTyping {
+  display: flex;
+  overflow: visible;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(355deg);
+  padding: 1em;
+  border-radius: 10px;
+  height: 50%;
+  width: 80%;
+  background-image: url("/Users/davelandey/Portfolio/src/Assets/Images/Wide-Ruled-Paper.jpg");
+  margin: 1em;
 }
