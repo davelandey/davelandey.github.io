@@ -1,3 +1,7 @@
+/* #ProfilePicContainer {
+  margin-top: 1.5em;
+} */
+
 #ProfilePicRow {
   display: flex;
   flex-direction: row;

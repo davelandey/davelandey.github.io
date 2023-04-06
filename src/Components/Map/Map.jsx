@@ -37,9 +37,13 @@ const Map = (props) => {
 
     return (
       <h6>
-        latitude: {position.lat.toFixed(4)}, longitude:{" "}
-        {position.lng.toFixed(4)}
-       <button onClick={onClick}>Reset</button>
+        {/* Optional: lat and long of center of map displayed - removed for now */}
+
+        {/* Latitude: {position.lat.toFixed(4)}<br/> 
+        Longitude:{position.lng.toFixed(4)}<br/> */}
+
+        {/* Reset map on click - would like to have this button containted within/on map */}
+       <button id="mapRestButton" onClick={onClick}>Reset</button>
       </h6>
     );
   }

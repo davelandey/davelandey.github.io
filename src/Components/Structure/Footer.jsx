@@ -32,12 +32,9 @@ const Footer = (props) => {
             <Modal isOpen={modal} toggle={toggle}>
               <ModalHeader toggle={toggle}>Contact me</ModalHeader>
               <ModalBody>
-                <Email />
+                <Email toggle = {toggle} />
               </ModalBody>
               <ModalFooter>
-                <Button color="primary" onClick={toggle}>
-                  Send
-                </Button>{" "}
                 <Button color="secondary" onClick={toggle}>
                   Cancel
                 </Button>

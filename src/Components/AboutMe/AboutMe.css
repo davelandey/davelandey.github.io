@@ -1,10 +1,19 @@
 #aboutMeContainer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
   height: auto;
-  width: 100%;
+  /* width: 100%; */
   background-color: plum;
+}
+
+#aboutMeIntro {
+  background-color: cyan;
+  margin: 0.5em;
+  padding: 1em;
+  width: 90%;
+  border-radius: 10px;
+  text-align: center;
 }
 
 #fontContainer {
@@ -35,4 +44,12 @@
   width: 80%;
   background-image: url("/Users/davelandey/Portfolio/src/Assets/Images/Wide-Ruled-Paper.jpg");
   margin: 1em;
+}
+
+/* #aboutMeIntro {
+  width: 85%;
+} */
+
+#aboutMeMap {
+  width: 75%;
 }

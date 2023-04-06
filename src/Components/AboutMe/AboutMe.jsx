@@ -1,33 +1,38 @@
 import Typewriter from "typewriter-effect";
-import { Row } from "react";
+import { Row, Col } from "react";
 import Map from "../Map/Map.jsx";
 import "./AboutMe.css";
 
 const AboutMe = (props) => {
   return (
-    <div id='aboutMeContainer'>
-      {/* <Row> */}
-      <div>
-        <h5
-          style={{
-            backgroundColor: "cyan",
-            margin: "0.5em",
-            padding: "0.5em",
-            width: "90%",
-            borderRadius: "10px",
-            textAlign: "center",
-          }}
-        >
+    <div id='aboutMeContainer' fluid="true" l="3">
+      <div id='aboutMeIntro' xl="2" l="3" >
+        <h5>
           I was born in, and lived around, South Africa until 2018 - when I
           moved to Vermont, USA where I now live with my wife (Jess), our two
-          dogs (Murphy and Chance) and 15 chickens. <br />
+          dogs (Murphy and Chance) and 15 chickens.
+          <br />
+          <br />
+          I am a builder, creator and problem confronter and solver - committed to lifelong
+          learning. I thrive when I am planning, making and fixing things. It is
+          this, which sparked my interest in building things with code. I
+          investigated and learned some HTML, CSS and JavaScript myself before I
+          enrolled in, and graduated from, a software development bootcamp. It
+          was here where I was exposed to, and have experience with a variety of, <strong><a href="#experienceBody" style={{textDecoration: "none"}}>full stack technologies</a></strong> - and have
+          not looked back since.
+          <br />
           <br />
           If a picture is worth a thousand words, how about an interactive map
-          of the places I have called home?!
+          of the places I have lived, worked and called home?!
         </h5>
       </div>
-      <Map />
-      <div>
+      <div id="aboutMeMap" xl="4" l="3">
+        <Map />
+      </div>
+
+      {/* My favorite songs */}
+
+      {/* <div>
         <h3>Here are some of my favorite songs, at the moment:</h3>
         <iframe
           src='https://open.spotify.com/embed/playlist/5wJklhENubRULP5QWExObF?utm_source=generator'
@@ -38,10 +43,12 @@ const AboutMe = (props) => {
           loading='lazy'
           title='Dave Landey Spotify playlist: 97 - oh, 1'
         ></iframe>
-      </div>
-      {/* </Row> */}
-      {/* <Row> */}
-      <div id='fontContainer'>
+      </div> */}
+
+      {/* My favorite font */}
+          {/* https://www.npmjs.com/package/typewriter-effect */}
+
+      {/* <div id='fontContainer'>
         <h2>My favorite font is: </h2>
         <div id='fontTyping'>
           <a
@@ -52,11 +59,9 @@ const AboutMe = (props) => {
           >
             {" "}
             <h2>
-              {/* https://www.npmjs.com/package/typewriter-effect */}
               <Typewriter
                 options={{
                   strings: [" Ubuntu"],
-                  // cursorClassName:"typerwriteCursor",
                   cursor: "_",
                   autoStart: false,
                   loop: false,
@@ -67,8 +72,8 @@ const AboutMe = (props) => {
             </h2>
           </a>
         </div>
-      </div>
-      {/* </Row> */}
+      </div> */}
+
     </div>
   );
 };

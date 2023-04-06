@@ -102,32 +102,32 @@ const Experience = (props) => {
                 },
                 {
                   altText: "NodeJS",
-                  key: 3,
+                  key: 4,
                   src: NodeJS,
                 },
                 {
                   altText: "Javascript",
-                  key: 3,
+                  key: 5,
                   src: JS,
                 },
                 {
                   altText: "HTML - Hyper Text Markup Language",
-                  key: 3,
+                  key: 6,
                   src: HTML,
                 },
                 {
                   altText: "CSS - Cascade Styling Sheets",
-                  key: 3,
+                  key: 7,
                   src: CSS,
                 },
                 {
                   altText: "Github",
-                  key: 3,
+                  key: 8,
                   src: Github,
                 },
                 {
                   altText: "Agile Methodology",
-                  key: 3,
+                  key: 9,
                   src: Agile,
                 },
               ]} />
@@ -167,7 +167,7 @@ const Experience = (props) => {
                   based on their answer, the range of guesses was adjusted.
                 </div>
               </CardText>
-              <Button>GitHub Repo</Button>
+             <a href="https://github.com/davelandey/guess-the-number-aug2022" target="_blank" rel="noopener noreferrer"><Button>GitHub Repo</Button></a>
             </CardBody>
           </Card>
           <Card xl="4" l="6">
@@ -216,22 +216,33 @@ const Experience = (props) => {
             <CardText>
               <div>
                 {" "}
-                This project was an introduction to JavaScript, logic and
-                writing functional code - to make something{" "}
-                <strong>
-                  <em>fun</em>
-                </strong>
-                .
+                This was a group project, and the capstone to the course. In this greenfield application, along with my team, we made use of MongoDB, Express JS, React and Node JS to develop a  <strong>
+                  <em>full MERN stack</em>
+                </strong> application.{" "}
               </div>{" "}
               <br />
               <div>
-                In this game, the user determined a range, and a secret number
-                within. The computer guessed the number, making use of a
-                binary search - asking the user if the guess was higher/lower.
-                based on their answer, the range of guesses was adjusted.
+              Our team of three met with our sponsor, during an inception meeting, and discussed their hope and goals for the project. <br /><br />
+              <ul>
+                <li>A clean and simple aesthetic </li>
+                <li>A resource for pet owners</li>
+                <li>A place to build community</li>
+              </ul>
+              
+            
+              Following which worked on, and presented, our initial designs and ideas. Once approved, we began building the application. Meeting weekly to share progress, discuss ideas and present options. <br /><br />
+
+              Our team worked very closely, meeting daily and collaborating and consulting where and when needed. <br /><br /> The areas which I took the lead on were:
+              <ul>
+                <li>The map integration - using React Leaflet</li>
+                <li>Fine tuning the maps appearacnce to match the look and feel of our application</li>
+                <li>The pet profile</li>
+                </ul>
               </div>
             </CardText>
-            <Button>Button</Button>
+            <a href="https://github.com/davelandey/pupspot" target="_blank" rel="noopener noreferrer"><Button>Github Repo</Button></a>
+            <a href="https://pupspot.netlify.app/" target="_blank" rel="noopener noreferrer"><Button>Visit PupSpot</Button></a>
+            
           </CardBody>
         </Card>
       </Row>
@@ -258,8 +269,9 @@ const Experience = (props) => {
             },
           ]} />
         <CardBody>
-          <CardTitle style={{ textAlign: "center" }} tag='h5'>
+          <CardTitle style={{ textAlign: "center" }} tag='h3'>
             bMack
+            <h5>My next project!</h5>
           </CardTitle>
           <CardText>
             <div>
@@ -275,7 +287,7 @@ const Experience = (props) => {
               expose me to new technologies.
             </div>
           </CardText>
-          <Button>GitHub Repo</Button>
+          <a href="https://github.com/davelandey/bMack" target="_blank" rel="noopener noreferrer"><Button>Github Repo</Button></a>
         </CardBody>
       </Card>
     {/* <Card>
