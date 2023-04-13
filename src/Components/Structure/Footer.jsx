@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { React, useState } from "react";
 import "../../App.css";
 import Email from "../Email/Email";
+import Resume from '../../Assets/Resume/Dave Landey - Résumé 2023.pdf';
 import {
   Button,
   Form,
@@ -31,12 +32,9 @@ const Footer = (props) => {
             <Modal isOpen={modal} toggle={toggle}>
               <ModalHeader toggle={toggle}>Contact me</ModalHeader>
               <ModalBody>
-                <Email />
+                <Email toggle = {toggle} />
               </ModalBody>
               <ModalFooter>
-                <Button color="primary" onClick={toggle}>
-                  Send
-                </Button>{" "}
                 <Button color="secondary" onClick={toggle}>
                   Cancel
                 </Button>
@@ -44,12 +42,17 @@ const Footer = (props) => {
             </Modal>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/dave-landey-62542141/">
+            <a href="https://www.linkedin.com/in/dave-landey-62542141/"  target='_blank'
+              rel='noopener noreferrer'>
               LinkedIn
             </a>
           </li>
           <li>
-            <a href="https://github.com/davelandey">Github</a>
+            <a href="https://github.com/davelandey"  target='_blank'
+              rel='noopener noreferrer'>Github</a>
+          </li>
+          <li>
+            <a href={Resume} download>Résumé (download)</a>
           </li>
         </ul>
       </div>

@@ -38,22 +38,6 @@ const Navbar = (props) => {
           </li>
           <li>
             <NavLink
-              to='/projects'
-              style={({ isActive }) => (isActive ? activeStyle : inActiveStyle)}
-            >
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to='/hobbies-and-interests'
-              style={({ isActive }) => (isActive ? activeStyle : inActiveStyle)}
-            >
-              Hobbies & Interests
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
               to='/experience'
               style={({ isActive }) => (isActive ? activeStyle : inActiveStyle)}
             >

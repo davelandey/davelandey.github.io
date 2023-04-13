@@ -1,23 +1,26 @@
 #container {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   align-self: flex-end;
   overflow: hidden;
 }
 #mapContainer {
-  height: 600px;
-  width: 1000px;
+  height: 400px;
+  width: auto;
   border: 1em solid purple;
   border-radius: 10px;
 }
 
 #mapRestButton {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  width: 75px;
-  padding: 10px;
-  z-index: 500;
+  position: relative;
+  background-color: yellow;
+  font-size: larger;
+  border: 0.1em solid purple;
+  bottom: 65px;
+  left: 30px;
+  width: 70px;
+  padding: 5px;
+  z-index: 450;
 }

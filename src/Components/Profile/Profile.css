@@ -1,24 +1,24 @@
 #ProfilePicContainer {
-  /* min-width: 100%; */
+  margin-top: 1em;
 }
+
 #ProfilePicRow {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 #ProfilePic {
   margin: 0;
   padding: 0;
-  /* width: 100%; */
+  width: 80%;
 }
 
 #profileIntro {
   display: flex;
   text-align: left;
   justify-content: flex-end;
-  background-color: aqua;
   height: 45vh;
 }
