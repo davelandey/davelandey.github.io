@@ -42,12 +42,14 @@ const Footer = (props) => {
             </Modal>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/dave-landey-62542141/">
+            <a href="https://www.linkedin.com/in/dave-landey-62542141/"  target='_blank'
+              rel='noopener noreferrer'>
               LinkedIn
             </a>
           </li>
           <li>
-            <a href="https://github.com/davelandey">Github</a>
+            <a href="https://github.com/davelandey"  target='_blank'
+              rel='noopener noreferrer'>Github</a>
           </li>
           <li>
             <a href={Resume} download>Résumé (download)</a>

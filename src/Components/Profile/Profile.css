@@ -1,6 +1,6 @@
-/* #ProfilePicContainer {
-  margin-top: 1.5em;
-} */
+#ProfilePicContainer {
+  margin-top: 1em;
+}
 
 #ProfilePicRow {
   display: flex;

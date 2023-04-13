@@ -4,11 +4,9 @@
   justify-content: center;
   height: auto;
   /* width: 100%; */
-  background-color: plum;
 }
 
 #aboutMeIntro {
-  background-color: cyan;
   margin: 0.5em;
   padding: 1em;
   width: 90%;

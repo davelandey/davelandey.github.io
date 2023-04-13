@@ -56,8 +56,8 @@ const Experience = (props) => {
     <div id='experienceBody'>
       <Col className='w-100'>
         <Row class='row justify-content-center'>
-          <Accordion open={open} toggle={toggle}>
-            <AccordionItem>
+          <Accordion open={open} toggle={toggle} >
+            <AccordionItem id='accordionCustom'>
               <AccordionHeader className='text-center' targetId='1'>
                 Technical Skills
               </AccordionHeader>
@@ -82,7 +82,7 @@ const Experience = (props) => {
         <Row className='justify-content-center'>
           <div id='Container'>
             <UncontrolledCarousel
-              controls="false"
+              controls='false'
               id='UncontrolledCarousel'
               items={[
                 {
@@ -130,21 +130,88 @@ const Experience = (props) => {
                   key: 9,
                   src: Agile,
                 },
-              ]} />
+              ]}
+            />
           </div>
         </Row>
       </Col>
       {/* Investigate bootstrap sizing and positioning for these cards: https://getbootstrap.com/docs/5.0/utilities/sizing/ */}
+      <Col id='projectColumn'>
       <Row>
-        <h3>Projects:</h3>
-        <CardGroup xl="4" l="6" s="12">
-          <Card>
+      <div id='titleDiv'><h3>Experience:</h3></div>
+        <Card body='true'>
+          <CardImg alt='PupSpot' src={PupSpot} top width='60%' height='45%' />
+          <CardBody>
+            <CardTitle style={{ textAlign: "center" }} tag='h5'>
+              PupSpot
+            </CardTitle>
+            <CardText>
+              <div>
+                {" "}
+                PupSpot was a group project, and the capstone to the course. In
+                this greenfield application, along with my team, we made use of all we had learnt in our course (and a whole lot more), such as:
+                MongoDB, Express JS, React and Node JS to develop a{" "}
+                <strong>
+                  <em>full MERN stack</em>
+                </strong>{" "}
+                application.{" "}
+              </div>{" "}
+              <br />
+              <div>
+                During an inception meeting, our team of three met with our sponsor,
+                and discussed their hope and goals for the project:{" "}
+                <br />
+                <br />
+                <ul>
+                  <li>A clean and simple aesthetic </li>
+                  <li>A resource for pet owners</li>
+                  <li>A place to build community</li>
+                </ul>
+                Following which worked on, and presented, our initial designs
+                and ideas. Once approved, we began building the application. Our
+                team worked very closely, meeting daily and collaborating and
+                consulting where and when needed. We met with our sponsor weekly
+                to share progress, discuss ideas and present options.
+                <br />
+                <br /> The areas which I took the lead on were:
+                <ul>
+                  <li>The map integration - using React Leaflet</li>
+                  <li>
+                    Fine tuning the maps appearacnce to match the look and feel
+                    of our application
+                  </li>
+                  <li>The pet profile</li>
+                </ul>
+              </div>
+            </CardText>
+            <a
+              href='https://github.com/davelandey/pupspot'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Button>Github Repo</Button>
+            </a>
+            <a
+              href='https://pupspot.netlify.app/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Button>Visit PupSpot</Button>
+            </a>
+          </CardBody>
+        </Card>
+      </Row>
+      <Row id='projectRow'>
+       <div id='titleDiv'> <h3>Projects:</h3></div>
+        <CardGroup xl='4' l='6' s='12'>
+          <Card body='true' xl='6' l='6' s='12'>
             <CardImg
               alt='Card image cap'
               src={GTN1}
               top
               width='100%'
-              height='40%' />
+              height='40%'
+            />
             <CardBody>
               <CardTitle style={{ textAlign: "center" }} tag='h5'>
                 Guess the Number
@@ -167,16 +234,23 @@ const Experience = (props) => {
                   based on their answer, the range of guesses was adjusted.
                 </div>
               </CardText>
-             <a href="https://github.com/davelandey/guess-the-number-aug2022" target="_blank" rel="noopener noreferrer"><Button>GitHub Repo</Button></a>
+              <a
+                href='https://github.com/davelandey/guess-the-number-aug2022'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
+              </a>
+                <Button>GitHub Repo</Button>
             </CardBody>
           </Card>
-          <Card xl="4" l="6">
+          <Card body='true' xl='6' l='6' s='12'>
             <CardImg
               alt='Card image cap'
               src={Jeopardy}
               top
               width='100%'
-              height='40%' />
+              height='40%'
+            />
             <CardBody>
               <CardTitle style={{ textAlign: "center" }} tag='h5'>
                 Jeopardy
@@ -199,125 +273,65 @@ const Experience = (props) => {
             </CardBody>
           </Card>
         </CardGroup>
-        </Row>
-        <Row>
-          <h3>Experience:</h3>
-        <Card>
-          <CardImg
-            alt='PupSpot'
-            src={PupSpot}
-            top
-            width='100%'
-            height='60%' />
+      </Row>
+    
+      <Row>
+      <div id='titleDiv'><h3>Up next:</h3></div>
+      <CardGroup>
+        <Card body='true'>
+          <UncontrolledCarousel
+            interval='2500'
+            fade='true'
+            items={[
+              {
+                altText: "Login page",
+                key: 1,
+                src: bMack1,
+              },
+              {
+                altText: "Dashboard",
+                key: 2,
+                src: bMack2,
+              },
+              {
+                altText: "Individual page",
+                key: 3,
+                src: bMack3,
+              },
+            ]}
+          />
           <CardBody>
-            <CardTitle style={{ textAlign: "center" }} tag='h5'>
-              PupSpot
+            <CardTitle style={{ textAlign: "center" }} tag='h3'>
+              bMack
+              <h5>My next project!</h5>
             </CardTitle>
             <CardText>
               <div>
                 {" "}
-                This was a group project, and the capstone to the course. In this greenfield application, along with my team, we made use of MongoDB, Express JS, React and Node JS to develop a  <strong>
-                  <em>full MERN stack</em>
-                </strong> application.{" "}
-              </div>{" "}
+                The aim of this <em>upcoming</em> project is to solve a problem,
+                which I experienced in a previous position.{" "}
+              </div>
               <br />
               <div>
-              Our team of three met with our sponsor, during an inception meeting, and discussed their hope and goals for the project. <br /><br />
-              <ul>
-                <li>A clean and simple aesthetic </li>
-                <li>A resource for pet owners</li>
-                <li>A place to build community</li>
-              </ul>
-              
-            
-              Following which worked on, and presented, our initial designs and ideas. Once approved, we began building the application. Meeting weekly to share progress, discuss ideas and present options. <br /><br />
-
-              Our team worked very closely, meeting daily and collaborating and consulting where and when needed. <br /><br /> The areas which I took the lead on were:
-              <ul>
-                <li>The map integration - using React Leaflet</li>
-                <li>Fine tuning the maps appearacnce to match the look and feel of our application</li>
-                <li>The pet profile</li>
-                </ul>
+                This full stack application{" "}
+                <strong>(Firebase, Next.JS, React and Node)</strong> will
+                provide me opportunities to continue to hone my skills and
+                expose me to new technologies.
               </div>
             </CardText>
-            <a href="https://github.com/davelandey/pupspot" target="_blank" rel="noopener noreferrer"><Button>Github Repo</Button></a>
-            <a href="https://pupspot.netlify.app/" target="_blank" rel="noopener noreferrer"><Button>Visit PupSpot</Button></a>
-            
+            <a
+              href='https://github.com/davelandey/bMack'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Button>Github Repo</Button>
+            </a>
           </CardBody>
         </Card>
+      </CardGroup>
       </Row>
-        <CardGroup>
-      <Card>
-        <UncontrolledCarousel
-          interval='2500'
-          fade='true'
-          items={[
-            {
-              altText: "Login page",
-              key: 1,
-              src: bMack1,
-            },
-            {
-              altText: "Dashboard",
-              key: 2,
-              src: bMack2,
-            },
-            {
-              altText: "Individual page",
-              key: 3,
-              src: bMack3,
-            },
-          ]} />
-        <CardBody>
-          <CardTitle style={{ textAlign: "center" }} tag='h3'>
-            bMack
-            <h5>My next project!</h5>
-          </CardTitle>
-          <CardText>
-            <div>
-              {" "}
-              The aim of this <em>upcoming</em> project is to solve a
-              problem, which I experienced in a previous position.{" "}
-            </div>
-            <br />
-            <div>
-              This full stack application{" "}
-              <strong>(Firebase, Next.JS, React and Node)</strong> will
-              provide me opportunities to continue to hone my skills and
-              expose me to new technologies.
-            </div>
-          </CardText>
-          <a href="https://github.com/davelandey/bMack" target="_blank" rel="noopener noreferrer"><Button>Github Repo</Button></a>
-        </CardBody>
-      </Card>
-    {/* <Card>
-        <CardImg
-          alt='Sunday Diner Review'
-          src={SundayDR}
-          top
-          width='100%'
-          height='auto' />
-        <CardBody>
-          <CardTitle style={{ textAlign: "center" }} tag='h5'>
-            Sunday Diner Review
-          </CardTitle>
-          <CardText>
-            <div>
-              {" "}
-              The aim of this application is to provide a simple, yet
-              effective, data capturing platform.{" "}
-            </div>
-            <br />
-            <div>
-              My partner and I have been reviewing diners for a few years
-              now, making use of Google Sheets.
-            </div>
-          </CardText>
-          <Button>GitHub Repo</Button>
-        </CardBody>
-      </Card> */}
-          </CardGroup>
-          </div>
+      </Col>
+    </div>
   );
 };
 
