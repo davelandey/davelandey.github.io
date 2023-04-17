@@ -54,6 +54,7 @@ const Experience = (props) => {
   // const icons = {MongoDB, ExpressJS, React, NodeJS, JS, HTML, CSS, Github, Agile, Collaboration}
   return (
     <div id='experienceBody'>
+       <div id='titleDiv'><h3>Technical skills:</h3></div>
       <Col className='w-100'>
         <Row class='row justify-content-center'>
           <Accordion open={open} toggle={toggle} >
@@ -78,8 +79,8 @@ const Experience = (props) => {
           </Accordion>
         </Row>
 
-        {/* Carousel skills icons */}
-        <Row className='justify-content-center'>
+        {/* Carousel skills icons*/} 
+        <Row >
           <div id='Container'>
             <UncontrolledCarousel
               controls='false'

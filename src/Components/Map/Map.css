@@ -9,15 +9,15 @@
 #mapContainer {
   height: 400px;
   width: auto;
-  border: 1em solid purple;
+  border: 1em solid rgb(244, 162, 97, 0.9);
   border-radius: 10px;
 }
 
 #mapRestButton {
   position: relative;
-  background-color: yellow;
+  background-color: RGB(42, 157, 143, 0.9);
   font-size: larger;
-  border: 0.1em solid purple;
+  border: 0.1em solid rgb(244, 162, 97, 0.9);
   bottom: 65px;
   left: 30px;
   width: 70px;

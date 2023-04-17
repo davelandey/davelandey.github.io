@@ -7,6 +7,7 @@ const AboutMe = (props) => {
   return (
     <div id='aboutMeContainer' fluid="true" l="3">
       <div id='aboutMeIntro' xl="2" l="3" >
+      <div id='titleDiv'><h3>About Me:</h3></div>
         <h5>
           I was born in, and lived around, South Africa until 2018 - when I
           moved to Vermont, USA where I now live with my wife (Jess), our two
