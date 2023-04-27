@@ -1,5 +1,5 @@
 #ProfilePicContainer {
-  margin-top: 1em;
+  /* margin-top: 1em; */
 }
 
 #ProfilePicRow {
@@ -7,7 +7,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* background-color: blueviolet; */
 }
 
 #ProfilePic {

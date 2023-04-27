@@ -6,7 +6,7 @@ Snippets:
 - JS, HTML, CSS, next steps
   -shortcut for list with [x]
 
-*
+* \*\* Responsiveness: scroll through profile into about and expereince
 
 global import of profile - picture, facts, etc.
 
