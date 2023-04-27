@@ -140,8 +140,9 @@ const Experience = (props) => {
       <Col id='projectColumn'>
       <Row>
       <div id='titleDiv'><h3>Experience:</h3></div>
-        <Card body='true'>
-          <CardImg alt='PupSpot' src={PupSpot} top width='60%' height='45%' />
+        <Card body='true' xl='6' l='6' s='12'>
+          <CardImg alt='PupSpot' src={PupSpot} top width='100%'
+              height='40%' />
           <CardBody>
             <CardTitle style={{ textAlign: "center" }} tag='h5'>
               PupSpot
