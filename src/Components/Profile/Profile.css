@@ -1,0 +1,23 @@
+#ProfilePicContainer {
+  /* margin-top: 1em; */
+}
+
+#ProfilePicRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#ProfilePic {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+#profileIntro {
+  display: flex;
+  text-align: left;
+  justify-content: flex-end;
+  height: 45vh;
+}
