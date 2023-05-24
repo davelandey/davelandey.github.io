@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3a904798.css",
+    "main.js": "/static/js/main.80549acd.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/PupSpot - homepage.png": "/static/media/PupSpot - homepage.fc3b6933a8fcf1d0b4f8.png",
+    "static/media/profilePic.png": "/static/media/profilePic.369ffa2d9dc7f79977bd.png",
+    "static/media/SundayDR.png": "/static/media/SundayDR.58327414af78dc11c27b.png",
+    "static/media/Dave Landey - Résumé 2023.pdf": "/static/media/Dave Landey - Résumé 2023.5e2d148a98b9b4289dcd.pdf",
+    "static/media/Jeopardy_landing.png": "/static/media/Jeopardy_landing.472b426d7cf6a69123fe.png",
+    "static/media/Github.png": "/static/media/Github.945633b4951de2387b36.png",
+    "static/media/007-react.png": "/static/media/007-react.bb07693ee57afdce7c88.png",
+    "static/media/008-express.png": "/static/media/008-express.05b75acaaf5fa4b7c3c9.png",
+    "static/media/003-agile.png": "/static/media/003-agile.53d07698a73e21bfdc3c.png",
+    "static/media/guess_the_number.png": "/static/media/guess_the_number.a2f8378bce52f8b28cf3.png",
+    "static/media/bMack - dashboard.png": "/static/media/bMack - dashboard.bc19fa4deb9c309fa2a1.png",
+    "static/media/bMack - login.png": "/static/media/bMack - login.9c2dab804e75219e4cca.png",
+    "static/media/MongoDB.png": "/static/media/MongoDB.e7d4d7b515942a96473a.png",
+    "static/media/bMack - individual page.png": "/static/media/bMack - individual page.5f10d0ebf0028c1afbb7.png",
+    "static/media/nodejs.png": "/static/media/nodejs.994e5cfd608ea5cdb2ec.png",
+    "static/media/013-css.png": "/static/media/013-css.e923d4c2ffc8e2ef2b63.png",
+    "index.html": "/index.html",
+    "main.3a904798.css.map": "/static/css/main.3a904798.css.map",
+    "main.80549acd.js.map": "/static/js/main.80549acd.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a904798.css",
+    "static/js/main.80549acd.js"
+  ]
+}
