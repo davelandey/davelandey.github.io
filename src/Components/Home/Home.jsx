@@ -12,7 +12,7 @@ import "./Home.css";
 
 const Home = (props) => {
   return (
-    <Container id='homeContainer' fluid='true'>
+    <Container id='homeContainer' fluid = 'true'>
       <Col id='homeColumnOne' xl='4' lg='5' sm='6'>
         <Profile />
       </Col>

@@ -140,7 +140,7 @@ const Experience = (props) => {
       <Col id='projectColumn'>
       <Row>
       <div id='titleDiv'><h3>Experience:</h3></div>
-        <Card body='true' xl='6' l='6' s='12'>
+        <Card body='true' xl='4' l='6' s='12'>
           <CardImg alt='PupSpot' src={PupSpot} top width='100%'
               height='40%' />
           <CardBody>
@@ -241,8 +241,8 @@ const Experience = (props) => {
                 rel='noopener noreferrer'
                 target='_blank'
               >
-              </a>
                 <Button>GitHub Repo</Button>
+              </a>
             </CardBody>
           </Card>
           <Card body='true' xl='6' l='6' s='12'>
@@ -271,7 +271,13 @@ const Experience = (props) => {
                   display a question.
                 </div>
               </CardText>
-              <Button>Button</Button>
+              <a
+                href='https://github.com/davelandey/jeopardy_board_project'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
+                <Button>GitHub Repo</Button>
+              </a>
             </CardBody>
           </Card>
         </CardGroup>
@@ -310,7 +316,7 @@ const Experience = (props) => {
             <CardText>
               <div>
                 {" "}
-                The aim of this <em>upcoming</em> project is to solve a problem,
+                The aim of this project is to solve a problem,
                 which I experienced in a previous position.{" "}
               </div>
               <br />

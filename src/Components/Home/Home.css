@@ -1,5 +1,6 @@
 #homeContainer {
   height: 98vh;
+  width: 100vw;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -18,7 +19,8 @@
   justify-content: center;
   height: 95%;
   overflow: hidden;
-  margin-top: 1em;
+  margin-top: 1.2em;
+  margin-left: 1em;
   margin: none;
   padding: none;
   gap: none;
@@ -29,6 +31,7 @@
   flex-flow: row wrap;
   justify-content: center;
   height: 100%;
+  overflow-x: hidden;
   overflow-y: scroll !important;
   scrollbar-color: var(--Text);
   scroll-behavior: smooth;
